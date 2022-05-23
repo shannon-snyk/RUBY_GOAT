@@ -8,8 +8,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install npm dependencies
-          command: 'npm install' 
+          name: Install ruby dependencies
+          command: 'gem install rails' 
       - snyk/scan:
          fail-on-issues: false
          monitor-on-build: true                                    # create a snapshot of apps dependencies on snyk.io, for continuous monitoring (recommended!)
