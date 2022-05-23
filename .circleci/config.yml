@@ -12,7 +12,7 @@ jobs:
          monitor-on-build: true   
       - run:
           name: install snyk
-          command: 'npm install -g snyk'
+          command: 'npm install snyk'
       - run:
           name: snyk code test
           command: 'snyk code test'                                # create a snapshot of apps dependencies on snyk.io, for continuous monitoring (recommended!)
